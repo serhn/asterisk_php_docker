@@ -1,5 +1,5 @@
 services:
-  homeassistant:
+  asterisk:
     container_name: aster
     image: "serh/asterisk-php:latest"
     environment:

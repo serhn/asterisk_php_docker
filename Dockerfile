@@ -9,6 +9,7 @@ RUN set -e \
          asterisk-chan-dongle \
          asterisk-sample-config >/dev/null \
          php php-curl php-pdo_sqlite php-json \
+         lame \
 && asterisk -U asterisk &>/dev/null \
 && sleep 5s \
 && [ "$(asterisk -rx "core show channeltypes" | grep PJSIP)" != "" ] && : \
